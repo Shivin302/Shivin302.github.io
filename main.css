@@ -1,0 +1,93 @@
+body {
+  /* background: yellow; */
+  font-family: 'Niramit', sans-serif;
+}
+
+.container {
+  width: 80vw;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+/* Navigation */
+.nav {
+  height: 20vh;
+  position: relative;
+}
+
+.nav-title {
+  position: absolute;
+  left: 0px;
+  animation: float 2s infinite;
+}
+
+.nav-title:hover {
+  transition: 1s ease-out;
+  transform: scale(2);
+}
+
+@keyframes float {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(64px);}
+  100% {transform: translateX(0px);}
+}
+
+.nav-links {
+  position: absolute;
+  right: 0px;
+}
+.nav-links >a:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+/* Sections */
+.home {
+  height: 80vh;
+}
+
+.work {
+  background: yellow;
+}
+
+.work-title {
+  padding-top: 120px;
+  font-size: 24px;
+}
+
+.project-container {
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 24px;
+}
+.projects-list {
+  display: flex;
+  flex-direction: row
+}
+.project-img {
+  width: 20vw
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row
+}
+
+@media (max-width 700px) {
+  .projects-list{
+    flex-direction: column;
+  }
+  .work {
+    height: auto;
+  }
+  .project {
+    width: 90vw;
+  }
+  .project >p {
+    margin: 0px;
+  }
+}
+ # id
