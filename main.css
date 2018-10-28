@@ -5,13 +5,13 @@ body {
 
 .container {
   width: 80vw;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
 /* Navigation */
 .nav {
-  height: 20vh;
+  height: 5vh;
   position: relative;
 }
 
@@ -36,10 +36,20 @@ body {
   position: absolute;
   right: 0px;
 }
+
 .nav-links >a:hover {
   color: white;
   background: black;
   cursor: pointer;
+}
+
+.larger-text {
+  font-size: 50px;
+}
+
+.my-img {
+  width: 20%;
+  height: 20%;
 }
 
 /* Sections */
@@ -47,33 +57,92 @@ body {
   height: 80vh;
 }
 
+.education-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.education-img {
+  height: 25vh;
+  width: auto;
+}
+
+.education {
+  width: 1;
+  padding-right: 20px;
+}
+
+.education-text {
+  width: 25vw;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.programming-img {
+  width: 15vw;
+  height: auto;
+  padding-right: 5vw;
+}
+
+.programming-text {
+  width: 20vw;
+}
+
+
 .work {
   background: yellow;
 }
 
-.work-title {
-  padding-top: 120px;
-  font-size: 24px;
+.work-container {
+  background: rgb(255, 255, 200);
 }
 
-.project-container {
-  justify-content: space-between;
+.work-title {
+  font-size: 48px;
 }
 
 .project-title {
   font-size: 24px;
 }
+
 .projects-list {
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+.project {
+  width: 1;
+  height: 1;
+}
+
 .project-img {
-  width: 20vw
+  width: 20vw;
+  height: auto;
+}
+
+.project-text {
+  width: 20vw;
+}
+
+.contact-container {
+  height: 20vh;
 }
 
 .contact-links {
   display: flex;
   flex-direction: row
+}
+
+.contact {
+  height: 5vh;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (max-width 700px) {
@@ -90,4 +159,3 @@ body {
     margin: 0px;
   }
 }
- # id
